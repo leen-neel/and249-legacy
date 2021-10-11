@@ -1,7 +1,7 @@
 <template>
   <q-card class="q-mt-lg q-pa-sm">
     <q-card-section>
-      <div class="q-mt-xl allign-left text-bold text-h3">About me</div>
+      <div class="allign-left text-bold text-h3">About me</div>
     </q-card-section>
     <q-card-section class="about-text">
       Hey there! I am
