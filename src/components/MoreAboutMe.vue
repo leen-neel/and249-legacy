@@ -33,7 +33,9 @@
         <div class="text-h4 text-bold">Hobbies</div>
         <p class="about-text q-mt-md">
           My hobbies include listening to music, programming and hanging out
-          with my friends.
+          with my friends. I also like making level designs for fun. You can
+          find some of them on
+          <a href="http://instagram.com/and_249">my Instagram</a>
         </p>
       </q-tab-panel>
     </q-tab-panels>

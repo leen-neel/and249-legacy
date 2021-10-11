@@ -1,19 +1,21 @@
 // app global css in SCSS form
 
-// Width
+// Scroll bar
 ::-webkit-scrollbar {
   width: 10px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #0b917f;
   border-radius: 16px;
 }
-
-// Handle on hover
 ::-webkit-scrollbar-thumb:hover {
   background: #0d8676;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .header-title {
@@ -41,6 +43,10 @@ body.body--dark {
   .header-title {
     color: #fff;
   }
+
+  a {
+    color: white;
+  }
 }
 
 /** Light mode classes */
@@ -61,6 +67,10 @@ body.body--light {
 
   .q-tab-panel {
     background-color: #71aca1;
+  }
+
+  a {
+    color: black;
   }
 }
 // To made the header transparent
