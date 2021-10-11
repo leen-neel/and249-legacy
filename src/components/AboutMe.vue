@@ -20,11 +20,11 @@
 
     <q-card-actions vertical align="center">
       <q-btn
-        class="cta text-black text-bold q-px-xl q-py-xs"
+        class="text-bold q-px-xl q-py-xs"
         type="a"
-        href="#more"
+        color="primary"
+        href="#contact"
         size="22px"
-        flat
         label="Contact Me"
       />
     </q-card-actions>

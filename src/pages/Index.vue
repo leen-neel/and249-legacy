@@ -4,7 +4,9 @@
 
     <AboutMe />
 
-    <MoreAboutMe id="more" />
+    <MoreAboutMe />
+
+    <ContactForm id="contact" />
   </q-page>
 </template>
 
@@ -14,6 +16,7 @@ import { defineComponent } from "vue";
 import HeroSection from "components/HeroSection.vue";
 import AboutMe from "components/AboutMe";
 import MoreAboutMe from "components/MoreAboutMe";
+import ContactForm from "components/ContactForm";
 
 export default defineComponent({
   name: "PageIndex",
@@ -22,6 +25,7 @@ export default defineComponent({
     HeroSection,
     AboutMe,
     MoreAboutMe,
+    ContactForm,
   },
 });
 </script>
