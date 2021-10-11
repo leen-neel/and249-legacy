@@ -11,18 +11,21 @@
   background: #0d8676;
 }
 
+// Link styles
 a {
   &:hover {
     text-decoration: none;
   }
 }
 
+// Heade title style
 .header-title {
   font-weight: 900;
   cursor: pointer;
   font-size: x-large;
 }
 
+// The text on the "About me" section and the tabs layout
 .about-text {
   font-size: large;
 }
