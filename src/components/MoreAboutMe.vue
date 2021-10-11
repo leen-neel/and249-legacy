@@ -17,7 +17,7 @@
       <q-tab-panel name="skills">
         <div class="text-h4 text-bold">Skills</div>
         <p class="about-text q-mt-md">
-          <strong>Language skills:</strong> HTML, CSS, JavaScript
+          <strong>Language skills:</strong> HTML, CSS, SCSS, JavaScript
         </p>
 
         <p class="about-text q-mt-md">
