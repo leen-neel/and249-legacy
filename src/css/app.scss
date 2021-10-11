@@ -1,8 +1,32 @@
 // app global css in SCSS form
 
+// Width
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b917f;
+  border-radius: 16px;
+}
+
+// Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: #0d8676;
+}
+
 .header-title {
   font-weight: 900;
   cursor: pointer;
+}
+
+.about-text {
+  font-size: x-large;
+}
+
+.q-card {
+  border-radius: 16px;
 }
 
 /** Dark mode classes */

@@ -15,13 +15,22 @@
 
         <div>
           <q-avatar size="250px" :class="{ 'avatar-card': $q.screen.lt.md }">
-            <img src="images/neel.jpg" />
+            <img src="images/avatar_neel.png" />
           </q-avatar>
         </div>
       </div>
     </q-card>
 
-    <div class="q-mt-xl text-center text-bold text-h3">What I do</div>
+    <q-card class="q-mt-lg">
+      <q-card-section>
+        <div class="q-mt-xl allign-left text-bold text-h3">About me</div>
+      </q-card-section>
+      <q-card-section class="about-text">
+        Hey there! I am <span class="archDau"> Anindo Neel Dutta! </span> I am a
+        web app developer working on the <strong>MEVN</strong> stack. I love
+        creating web apps and websites.
+      </q-card-section>
+    </q-card>
   </q-page>
 </template>
 
