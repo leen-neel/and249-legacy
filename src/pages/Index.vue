@@ -4,7 +4,7 @@
 
     <AboutMe />
 
-    <MoreAboutMe />
+    <MoreAboutMe id="more" />
   </q-page>
 </template>
 

@@ -17,5 +17,16 @@
         building stuff has always been a passion of mine.
       </p>
     </q-card-section>
+
+    <q-card-actions vertical align="center">
+      <q-btn
+        class="cta text-black text-bold q-px-xl q-py-xs"
+        type="a"
+        href="#more"
+        size="22px"
+        flat
+        label="Contact Me"
+      />
+    </q-card-actions>
   </q-card>
 </template>
