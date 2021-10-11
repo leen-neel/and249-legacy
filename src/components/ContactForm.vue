@@ -25,9 +25,8 @@
           color="white"
         />
 
-        <q-select
+        <q-input
           v-model="subject"
-          :options="options"
           class="q-mt-sm"
           color="white"
           label="Subject of your message"
@@ -66,7 +65,7 @@ export default {
     const email = ref("");
     const message = ref("");
     const subject = ref("");
-    const options = ["Inquiry about work", "Just a message"];
+
     const messageSent = ref(false);
 
     const sendMessage = () => {
@@ -95,7 +94,6 @@ export default {
       email,
       message,
       subject,
-      options,
       sendMessage,
       messageSent,
     };
