@@ -1,17 +1,44 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="q-pa-md">
+    <!-- Hero section -->
+    <q-card class="hero-card q-pa-lg">
+      <div class="row items-end justify-evenly">
+        <div
+          :class="{
+            'text-h1': $q.screen.gt.sm,
+            'text-h4': $q.screen.lt.md,
+            'q-pa-md': $q.screen.lt.md,
+          }"
+        >
+          Hi, I am <strong>Neel</strong>
+        </div>
+
+        <div>
+          <q-avatar size="300px" :class="{ 'avatar-card': $q.screen.lt.md }">
+            <img src="images/avatar_neel.png" />
+          </q-avatar>
+        </div>
+      </div>
+    </q-card>
+
+    <div class="q-mt-xl text-center text-bold text-h3">Who am I?</div>
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'PageIndex'
-})
+  name: "PageIndex",
+});
 </script>
+
+<style lang="scss" scoped>
+.hero-card {
+  border-radius: 16px;
+}
+
+.avatar-card {
+  border-radius: 16px;
+}
+</style>
