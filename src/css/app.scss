@@ -18,12 +18,16 @@ a {
   }
 }
 
+// Transition
 body {
   transition: 1000ms;
 }
-
 .q-toolbar {
   transition: 800ms;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 // Heade title style
