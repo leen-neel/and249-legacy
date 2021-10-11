@@ -10,7 +10,7 @@
             'q-pa-md': $q.screen.lt.md,
           }"
         >
-          Hi, I am <strong>Neel</strong>
+          Hi, I am <strong class="archDau">Neel</strong>
         </div>
 
         <div>

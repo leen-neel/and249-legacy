@@ -2,6 +2,10 @@
   <q-layout view="lHh Lpr lFf">
     <q-header>
       <q-toolbar class="flex justify-end">
+        <q-toolbar-title class="archDau header-title">
+          Anindo Neel Dutta
+        </q-toolbar-title>
+
         <q-btn
           flat
           round
@@ -19,7 +23,7 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "MainLayout",

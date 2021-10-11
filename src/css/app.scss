@@ -1,13 +1,24 @@
 // app global css in SCSS form
 
+.header-title {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/** Dark mode classes */
 body.body--dark {
   background-color: #032e28;
 
   .q-toolbar {
     background-color: #032e28;
   }
+
+  .header-title {
+    color: #fff;
+  }
 }
 
+/** Light mode classes */
 body.body--light {
   background-color: #53e6cc;
 
@@ -18,8 +29,22 @@ body.body--light {
   .q-card {
     background-color: #71aca1;
   }
-}
 
+  .header-title {
+    color: #000;
+  }
+}
+// To made the header transparent
 .header {
   background-color: transparent;
+}
+
+// Custom font face
+@font-face {
+  font-family: archDau;
+  src: url(./fonts/ArchDau.ttf);
+}
+
+.archDau {
+  font-family: "archDau";
 }
