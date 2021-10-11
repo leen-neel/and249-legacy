@@ -1,27 +1,40 @@
 <template>
   <q-card class="q-mt-lg">
-    <q-tabs v-model="tab" dense align="justify">
-      <q-tab name="mails" label="Mails" />
-      <q-tab name="alarms" label="Alarms" />
-      <q-tab name="movies" label="Movies" />
+    <q-tabs :dense="$q.screen.lt.md" v-model="tab" align="justify">
+      <q-tab icon="school" name="edu" label="Education" />
+      <q-tab icon="developer_mode" name="skills" label="Skills" />
+      <q-tab icon="auto_awesome" name="hobbies" label="Hobbies" />
     </q-tabs>
 
     <q-separator />
 
     <q-tab-panels v-model="tab" animated>
-      <q-tab-panel name="mails">
-        <div class="text-h6">Mails</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <q-tab-panel name="edu">
+        <div class="text-h4 text-bold">Education</div>
+        <p class="about-text q-mt-md">I am currently a high school student.</p>
       </q-tab-panel>
 
-      <q-tab-panel name="alarms">
-        <div class="text-h6">Alarms</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <q-tab-panel name="skills">
+        <div class="text-h4 text-bold">Skills</div>
+        <p class="about-text q-mt-md">
+          <strong>Language skills:</strong> HTML, CSS, JavaScript
+        </p>
+
+        <p class="about-text q-mt-md">
+          <strong>Framework:</strong> Vue.JS, Quasar Framework, Node JS
+        </p>
+
+        <p class="about-text q-mt-md">
+          <strong>Database:</strong> Firebase, MongoDB
+        </p>
       </q-tab-panel>
 
-      <q-tab-panel name="movies">
-        <div class="text-h6">Movies</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <q-tab-panel name="hobbies">
+        <div class="text-h4 text-bold">Hobbies</div>
+        <p class="about-text q-mt-md">
+          My hobbies include listening to music, programming and hanging out
+          with my friends.
+        </p>
       </q-tab-panel>
     </q-tab-panels>
   </q-card>
@@ -31,7 +44,7 @@
 import { ref } from "vue";
 export default {
   setup() {
-    const tab = ref("mails");
+    const tab = ref("edu");
 
     return {
       tab,

@@ -1,7 +1,7 @@
 <template>
   <!-- Hero section -->
   <q-card class="hero-card q-pa-lg">
-    <div class="row items-end justify-evenly">
+    <div class="row items-center justify-evenly">
       <div
         :class="{
           'text-h1': $q.screen.gt.sm,
