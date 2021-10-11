@@ -14,7 +14,7 @@
         </div>
 
         <div>
-          <q-avatar size="300px" :class="{ 'avatar-card': $q.screen.lt.md }">
+          <q-avatar size="250px" :class="{ 'avatar-card': $q.screen.lt.md }">
             <img src="images/neel.jpg" />
           </q-avatar>
         </div>

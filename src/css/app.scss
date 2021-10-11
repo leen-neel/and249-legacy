@@ -2,8 +2,24 @@
 
 body.body--dark {
   background-color: #032e28;
+
+  .q-toolbar {
+    background-color: #032e28;
+  }
 }
 
 body.body--light {
   background-color: #53e6cc;
+
+  .q-toolbar {
+    background-color: #53e6cc;
+  }
+
+  .q-card {
+    background-color: #71aca1;
+  }
+}
+
+.header {
+  background-color: transparent;
 }
