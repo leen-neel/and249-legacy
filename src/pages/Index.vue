@@ -15,13 +15,13 @@
 
         <div>
           <q-avatar size="300px" :class="{ 'avatar-card': $q.screen.lt.md }">
-            <img src="images/avatar_neel.png" />
+            <img src="images/neel.jpg" />
           </q-avatar>
         </div>
       </div>
     </q-card>
 
-    <div class="q-mt-xl text-center text-bold text-h3">Who am I?</div>
+    <div class="q-mt-xl text-center text-bold text-h3">What I do</div>
   </q-page>
 </template>
 
