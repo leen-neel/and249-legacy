@@ -29,7 +29,7 @@
           v-model="subject"
           class="q-mt-sm"
           color="white"
-          label="Subject of your message"
+          label="Subject"
           filled
         />
 
