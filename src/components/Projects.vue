@@ -14,6 +14,10 @@
           :img="project.img"
           :stack="project.stack"
           :url="project.url"
+          :clientName="project.clientName"
+          :clientTitle="project.clientTitle"
+          :clientImg="project.clientImg"
+          :testimonial="project.testimonial"
         />
       </div>
     </q-card-section>
@@ -36,6 +40,10 @@ export default defineComponent({
         stack: "WordPress Along with Elementor",
         url: "https://katiejopockat.com/",
         img: "katiejo.jpg",
+        testimonial: "TEST TEST TEST TEST TEST",
+        clientName: "Katie Jo Pockat",
+        clientImg: "katie.jpg",
+        clientTitle: "Singer/Songwriter",
       },
     ]);
 
