@@ -10,12 +10,12 @@
 
     <q-tab-panels v-model="tab" animated>
       <q-tab-panel name="edu">
-        <div class="text-h4 text-bold">Education</div>
+        <div class="text-h4 oswald text-bold">Education</div>
         <p class="about-text q-mt-md">I am currently a high school student.</p>
       </q-tab-panel>
 
       <q-tab-panel name="skills">
-        <div class="text-h4 text-bold">Skills</div>
+        <div class="text-h4 oswald text-bold">Skills</div>
         <p class="about-text q-mt-md">
           <strong>Language skills:</strong> HTML, CSS, SCSS, JavaScript
         </p>
@@ -30,7 +30,7 @@
       </q-tab-panel>
 
       <q-tab-panel name="hobbies">
-        <div class="text-h4 text-bold">Hobbies</div>
+        <div class="oswald text-h4 text-bold">Hobbies</div>
         <p class="about-text q-mt-md">
           My hobbies include listening to music, programming and hanging out
           with my friends. I also like making level designs for fun. You can

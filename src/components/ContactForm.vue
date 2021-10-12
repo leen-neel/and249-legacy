@@ -1,7 +1,7 @@
 <template>
   <q-card class="q-mt-lg">
     <q-card-section>
-      <div class="allign-left text-bold text-h3">Contact me</div>
+      <div class="oswald allign-left text-bold text-h3">Contact me</div>
     </q-card-section>
     <q-card-section class="about-text">
       Wanna hire me or just talk to me? Shoot me a message!
@@ -44,6 +44,7 @@
       </q-form>
 
       <q-btn
+        v-if="!messageSent"
         class="q-mt-sm"
         color="primary"
         icon="send"

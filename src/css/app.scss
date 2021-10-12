@@ -96,7 +96,7 @@ body.body--light {
   background-color: transparent;
 }
 
-// Custom font face
+// Custom font face - Architects Daughter
 @font-face {
   font-family: archDau;
   src: url(./fonts/ArchDau.ttf);
@@ -104,4 +104,14 @@ body.body--light {
 
 .archDau {
   font-family: "archDau";
+}
+
+// Custom font face - Pacifico
+@font-face {
+  font-family: oswald;
+  src: url(./fonts/Oswald.ttf);
+}
+
+.oswald {
+  font-family: "oswald";
 }
