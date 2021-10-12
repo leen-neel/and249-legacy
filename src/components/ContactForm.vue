@@ -72,32 +72,32 @@ export default {
 
     const sendMessage = () => {
       if (name.value && email.value && message.value && subject.value) {
-        try {
-          sendMail({
-            name: name.value,
-            sender: email.value,
-            subject: subject.value,
-            body: message.value,
+        sendMail({
+          name: name.value,
+          sender: email.value,
+          subject: subject.value,
+          body: message.value,
+        })
+          .then(() => {
+            quasar.notify({
+              message: "Your message was sent!",
+              color: "primary",
+              position: "top-right",
+              progress: true,
+              timeout: 1500,
+            });
+            messageSent.value = true;
+          })
+          .catch(() => {
+            quasar.notify({
+              message: "Something went wrong 😔",
+              color: "red-10",
+              position: "top-right",
+              progress: true,
+              timeout: 1500,
+            });
+            return;
           });
-        } catch (error) {
-          quasar.notify({
-            message: "Something went wrong 😔",
-            color: "red-10",
-            position: "top-right",
-            progress: true,
-            timeout: 1500,
-          });
-          return;
-        }
-
-        quasar.notify({
-          message: "Your message was sent!",
-          color: "primary",
-          position: "top-right",
-          progress: true,
-          timeout: 1500,
-        });
-        messageSent.value = true;
       } else {
         quasar.notify({
           message: "Please enter all of the fields!",

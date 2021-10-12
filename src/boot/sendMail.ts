@@ -19,7 +19,7 @@ const sendMail = async (message: Message): Promise<void> => {
       },
     });
   } catch (error) {
-    console.log(error);
+    throw new Error("EmailFailed");
   }
 };
 
