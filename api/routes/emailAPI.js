@@ -1,8 +1,7 @@
-const { Router } = require("express");
 const nodemailer = require("nodemailer");
 const router = require("express").Router();
 
-const sendEmail = (sender, body, subject) => {
+const sendEmail = async (mailOptions) => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -14,24 +13,28 @@ const sendEmail = (sender, body, subject) => {
     },
   });
 
-  let mailOptions = {
-    from: sender,
-    to: process.env.MY_EMAIL,
-    subject: subject,
-    text: body,
-  };
-
-  transporter.sendMail(mailOptions, (err, res) => {
-    if (err) {
-      console.log("Error occured : " + err);
-    } else {
-      console.log(res);
-    }
-  });
+  try {
+    let message = await transporter.sendMail(mailOptions);
+    return "done";
+  } catch (error) {
+    return "err";
+  }
 };
 
-router.get("/contactSend/", (req, res) => {
-  res.send("email sent");
+router.get("/contactSend/", async (req, res) => {
+  let mailOptions = {
+    from: req.body.sender,
+    to: process.env.MY_EMAIL,
+    subject: req.body.subject,
+    html: `${req.body.body} <br /> <b>From:</b> ${req.body.sender}`,
+  };
+  const email = await sendEmail(mailOptions);
+
+  if (email == "done") {
+    res.send("Email sent!");
+  } else {
+    res.status(500).send("Something went wrong.");
+  }
 });
 
 module.exports = router;
