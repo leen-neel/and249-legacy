@@ -55,7 +55,7 @@ export default defineComponent({
           },
           themeColor: {
             name: "theme-color",
-            content: "#26a69a",
+            content: "#53e6cc",
           },
         },
       };
