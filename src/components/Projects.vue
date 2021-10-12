@@ -62,7 +62,8 @@ export default defineComponent({
         url: "http://noriangames.com/",
         img: "norian.jpg",
         forClient: true,
-        testimonial: "TEST TEST TEST TEST TEST",
+        testimonial:
+          "Anindo Neel Dutta did an impeccable job of creating our website. He is dedicated, committed and above all zealous in the tasks that he is assigned to. He has an excellent eye for details and is willing to spend a lot of his time and energy into making sure that he does his job with utmost sincerity. I would highly recommend Neel to anyone who wishes to procure his services and I would definitely approach him anytime I would need his services.",
         clientName: "Jake Koshy",
         clientImg: "jake.jpg",
         clientTitle: "CEO, Norian Games",
