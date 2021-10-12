@@ -91,4 +91,10 @@ export default defineComponent({
 .contactMe {
   background-color: #389787;
 }
+
+.body--light {
+  .contactMe {
+    background-color: #5dbdad;
+  }
+}
 </style>
