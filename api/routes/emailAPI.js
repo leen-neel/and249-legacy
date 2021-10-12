@@ -18,7 +18,7 @@ const sendEmail = (sender, body, subject) => {
     from: sender,
     to: process.env.MY_EMAIL,
     subject: subject,
-    html: body,
+    text: body,
   };
 
   transporter.sendMail(mailOptions, (err, res) => {
@@ -30,8 +30,8 @@ const sendEmail = (sender, body, subject) => {
   });
 };
 
-router.post("/contactSend/", (req, res) => {
+router.get("/contactSend/", (req, res) => {
   res.send("email sent");
 });
 
-module.exports = sendEmail;
+module.exports = router;
