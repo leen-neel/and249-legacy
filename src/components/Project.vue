@@ -13,7 +13,12 @@
       <strong>Tech Stack:</strong> {{ stack }}
 
       <div>
-        <q-btn color="white" label="Learn more" flat @click="learn = true" />
+        <q-btn
+          color="primary"
+          icon-right="arrow_forward"
+          label="Learn more"
+          @click="learn = true"
+        />
       </div>
     </q-card-section>
   </q-card>
