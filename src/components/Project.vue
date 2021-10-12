@@ -7,7 +7,9 @@
       spinner-size="82px"
     />
     <q-card-section>
-      <div class="text-h6">{{ title }}</div>
+      <div class="text-h6">
+        {{ title }}
+      </div>
     </q-card-section>
     <q-card-section class="about-text">
       <strong>Tech Stack:</strong> {{ stack }}
@@ -23,6 +25,7 @@
     </q-card-section>
   </q-card>
 
+  <!-- Dialog containing more info -->
   <q-dialog v-model="learn">
     <q-card>
       <q-card-section>
@@ -35,7 +38,9 @@
       </q-card-section>
 
       <q-card-section>
-        <div class="text-h6">{{ title }}</div>
+        <div class="text-h6">
+          <a target="_blank" :href="url">{{ title }}</a>
+        </div>
       </q-card-section>
       <q-card-section class="about-text">
         <strong>Tech Stack:</strong> {{ stack }}
