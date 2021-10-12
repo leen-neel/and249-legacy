@@ -18,7 +18,7 @@
       </p>
     </q-card-section>
 
-    <q-card-actions vertical align="center">
+    <q-card-actions align="center">
       <q-btn
         class="text-bold q-px-xl q-py-xs"
         type="a"

@@ -49,7 +49,7 @@
             </q-avatar>
           </div>
           <div class="flex flex-center">
-            {{ clientName }}, {{ clientTitle }}
+            {{ clientName }} - {{ clientTitle }}
           </div>
         </div>
       </q-card-section>
