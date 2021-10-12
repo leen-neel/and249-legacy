@@ -75,7 +75,7 @@ export default defineComponent({
         forClient: true,
         testimonial: "TEST TEST TEST TEST TEST",
         clientName: "Jake Koshy",
-        clientImg: "katie.jpg",
+        clientImg: "jake.jpg",
         clientTitle: "CEO, Norian Games",
       },
     ]);
