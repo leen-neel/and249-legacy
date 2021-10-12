@@ -22,12 +22,13 @@ const sendEmail = async (mailOptions) => {
 };
 
 router.post("/contactSend/", async (req, res) => {
-  console.log(req.body.message);
+  const { sender, body, subject, name } = req.body.message;
+
   let mailOptions = {
-    from: req.body.message.sender,
+    from: sender,
     to: process.env.MY_EMAIL,
-    subject: req.body.message.subject,
-    html: `${req.body.message.body} <br /> <b>From:</b> ${req.body.message.sender} - ${req.body.message.name}`,
+    subject: subject,
+    html: `${body} <br /> <b>From:</b> ${sender} - ${name}`,
   };
   const email = await sendEmail(mailOptions);
 

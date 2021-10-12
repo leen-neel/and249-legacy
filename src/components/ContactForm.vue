@@ -58,7 +58,7 @@
 import { ref } from "vue";
 import { useQuasar } from "quasar";
 import { sendMail } from "boot/sendMail";
-import { boot } from "quasar/wrappers";
+
 export default {
   setup() {
     const quasar = useQuasar();
