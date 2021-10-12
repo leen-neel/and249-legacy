@@ -7,6 +7,8 @@
     <MoreAboutMe />
 
     <ContactForm id="contact" />
+
+    <Footer />
   </q-page>
 </template>
 
@@ -17,6 +19,7 @@ import HeroSection from "components/HeroSection.vue";
 import AboutMe from "components/AboutMe";
 import MoreAboutMe from "components/MoreAboutMe";
 import ContactForm from "components/ContactForm";
+import Footer from "components/Footer";
 
 export default defineComponent({
   name: "PageIndex",
@@ -26,6 +29,7 @@ export default defineComponent({
     AboutMe,
     MoreAboutMe,
     ContactForm,
+    Footer,
   },
 });
 </script>
