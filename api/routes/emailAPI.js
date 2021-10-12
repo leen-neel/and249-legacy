@@ -28,7 +28,7 @@ router.post("/contactSend/", async (req, res) => {
     from: sender,
     to: process.env.MY_EMAIL,
     subject: subject,
-    html: `${body} <br /> <b>From:</b> ${sender} - ${name}`,
+    html: `<p>${body}</p> <br /> <p><b>From:</b> ${sender} - ${name}</p>`,
   };
   const email = await sendEmail(mailOptions);
 
