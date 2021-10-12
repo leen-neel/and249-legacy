@@ -57,17 +57,6 @@ export default defineComponent({
   setup() {
     const projects = ref([
       {
-        title: "Katie Jo Pockat",
-        stack: "WordPress Along with Elementor",
-        url: "https://katiejopockat.com/",
-        img: "katiejo.jpg",
-        forClient: true,
-        testimonial: "TEST TEST TEST TEST TEST",
-        clientName: "Katie Jo Pockat",
-        clientImg: "katie.jpg",
-        clientTitle: "Singer/Songwriter",
-      },
-      {
         title: "Norian Games",
         stack: "WordPress Along with Elementor",
         url: "http://noriangames.com/",
@@ -77,6 +66,17 @@ export default defineComponent({
         clientName: "Jake Koshy",
         clientImg: "jake.jpg",
         clientTitle: "CEO, Norian Games",
+      },
+      {
+        title: "Katie Jo Pockat",
+        stack: "WordPress Along with Elementor",
+        url: "https://katiejopockat.com/",
+        img: "katiejo.jpg",
+        forClient: true,
+        testimonial: "TEST TEST TEST TEST TEST",
+        clientName: "Katie Jo Pockat",
+        clientImg: "katie.jpg",
+        clientTitle: "Singer/Songwriter",
       },
     ]);
 
