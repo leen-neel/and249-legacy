@@ -14,19 +14,20 @@ const sendEmail = async (mailOptions) => {
   });
 
   try {
-    let message = await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);
     return "done";
   } catch (error) {
     return "err";
   }
 };
 
-router.get("/contactSend/", async (req, res) => {
+router.post("/contactSend/", async (req, res) => {
+  console.log(req.body.message);
   let mailOptions = {
-    from: req.body.sender,
+    from: req.body.message.sender,
     to: process.env.MY_EMAIL,
-    subject: req.body.subject,
-    html: `${req.body.body} <br /> <b>From:</b> ${req.body.sender}`,
+    subject: req.body.message.subject,
+    html: `${req.body.message.body} <br /> <b>From:</b> ${req.body.message.sender} - ${req.body.message.name}`,
   };
   const email = await sendEmail(mailOptions);
 

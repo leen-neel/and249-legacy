@@ -57,6 +57,8 @@
 <script>
 import { ref } from "vue";
 import { useQuasar } from "quasar";
+import { sendMail } from "boot/sendMail";
+import { boot } from "quasar/wrappers";
 export default {
   setup() {
     const quasar = useQuasar();
@@ -70,7 +72,24 @@ export default {
 
     const sendMessage = () => {
       if (name.value && email.value && message.value && subject.value) {
-        messageSent.value = true;
+        try {
+          sendMail({
+            name: name.value,
+            sender: email.value,
+            subject: subject.value,
+            body: message.value,
+          });
+        } catch (error) {
+          quasar.notify({
+            message: "Something went wrong 😔",
+            color: "red-10",
+            position: "top-right",
+            progress: true,
+            timeout: 1500,
+          });
+          return;
+        }
+
         quasar.notify({
           message: "Your message was sent!",
           color: "primary",
@@ -78,6 +97,7 @@ export default {
           progress: true,
           timeout: 1500,
         });
+        messageSent.value = true;
       } else {
         quasar.notify({
           message: "Please enter all of the fields!",
