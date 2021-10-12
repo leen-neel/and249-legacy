@@ -21,7 +21,8 @@
         </p>
 
         <p class="about-text q-mt-md">
-          <strong>Framework:</strong> Vue.JS, Quasar Framework, Node JS
+          <strong>Framework:</strong> Vue.JS, Quasar Framework, Node JS,
+          WordPress
         </p>
 
         <p class="about-text q-mt-md">
