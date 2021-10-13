@@ -55,8 +55,9 @@ html {
 body.body--dark {
   background-color: #032e28;
 
-  .q-toolbar {
-    background-color: #032e28;
+  .q-header {
+    background-color: #032e2891;
+    backdrop-filter: blur(7px);
   }
 
   .header-title {
@@ -72,8 +73,9 @@ body.body--dark {
 body.body--light {
   background-color: #53e6cc;
 
-  .q-toolbar {
-    background-color: #53e6cc;
+  .q-header {
+    background-color: #53e6cb8f;
+    backdrop-filter: blur(7px);
   }
 
   .q-card {
