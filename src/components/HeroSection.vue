@@ -14,7 +14,12 @@
 
       <div>
         <q-avatar size="250px" class="avatar-card">
-          <img src="images/neel.jpg" />
+          <q-img
+            src="images/neel.jpg"
+            :ratio="1 / 1"
+            spinner-color="primary"
+            spinner-size="82px"
+          />
         </q-avatar>
       </div>
     </div>
