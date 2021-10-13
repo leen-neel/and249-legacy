@@ -55,9 +55,17 @@ html {
 body.body--dark {
   background-color: #032e28;
 
-  .q-header {
-    background-color: rgba(3, 46, 40, 0.7);
-    backdrop-filter: blur(7px);
+  @supports (backdrop-filter: none) {
+    .q-header {
+      background-color: rgba(3, 46, 40, 0.7);
+      backdrop-filter: blur(7px);
+    }
+  }
+
+  @supports not (backdrop-filter: none) {
+    .q-header {
+      background-color: rgb(3, 46, 40);
+    }
   }
 
   .header-title {
@@ -73,9 +81,17 @@ body.body--dark {
 body.body--light {
   background-color: #53e6cc;
 
-  .q-header {
-    background-color: rgba(83, 230, 203, 0.7);
-    backdrop-filter: blur(7px);
+  @supports (backdrop-filter: none) {
+    .q-header {
+      background-color: rgba(83, 230, 203, 0.7);
+      backdrop-filter: blur(7px);
+    }
+  }
+
+  @supports not (backdrop-filter: none) {
+    .q-header {
+      background-color: rgb(83, 230, 203);
+    }
   }
 
   .q-card {
