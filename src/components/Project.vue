@@ -5,7 +5,15 @@
       :ratio="1 / 1"
       spinner-color="white"
       spinner-size="82px"
-    />
+    >
+      <q-chip
+        :icon="forClient ? 'fas fa-user-tag' : 'fas fa-project-diagram'"
+        :label="forClient ? 'Client Project' : 'Personal project'"
+        class="q-ml-sm q-mt-sm"
+        color="primary"
+        :ripple="false"
+      />
+    </q-img>
     <q-card-section>
       <div class="text-h6">
         {{ title }}
