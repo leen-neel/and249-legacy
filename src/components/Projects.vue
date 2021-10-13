@@ -75,7 +75,7 @@ export default defineComponent({
         img: "katiejo.jpg",
         forClient: true,
         testimonial:
-          "I hired Neel to create my official artist website. He built the whole site and it was up and running in two weeks. He involved me in the process, asking which color schemes I preferred and asked me all I'd like included on my site. Then he taught me how to make my own additions in the way of blog posts and song lyrics. As the webiste grew, he made all the necessary changes and updates whenever needed in a timely matter and is always available when I need him.",
+          "I hired Neel to create my official artist website. He built the whole site and it was up and running in two weeks. He involved me in the process, asking which color schemes I preferred and asked me all I'd like included on my site. Then he taught me how to make my own additions in the way of blog posts and song lyrics. As the website grew, he made all the necessary changes and updates whenever needed in a timely matter and is always available when I need him.",
         clientName: "Katie Jo Pockat",
         clientImg: "katie.jpg",
         clientTitle: "Singer/Songwriter",
