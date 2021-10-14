@@ -1,6 +1,6 @@
 <template>
   <!-- Hero section -->
-  <q-card class="hero-card q-pa-lg">
+  <q-card class="q-pa-lg">
     <div class="row items-center justify-evenly">
       <div
         :class="{
@@ -27,10 +27,6 @@
 </template>
 
 <style lang="scss" scoped>
-.hero-card {
-  border-radius: 16px;
-}
-
 .avatar-card {
   border-radius: 16px;
 }
