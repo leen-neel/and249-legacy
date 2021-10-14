@@ -31,7 +31,7 @@
             Want your own website or web app?
           </q-card-section>
 
-          <q-card-actions align="center">
+          <div class="flex flex-center q-py-md">
             <q-btn
               class="text-bold q-px-xl q-py-xs"
               type="a"
@@ -40,7 +40,7 @@
               size="22px"
               label="Contact Me"
             />
-          </q-card-actions>
+          </div>
         </q-card>
       </div>
     </q-card-section>
