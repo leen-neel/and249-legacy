@@ -56,9 +56,10 @@ router.post("/", async (req, res) => {
   }
 });
 
+// Delete project
 router.delete("/:projectID", async (req, res) => {
   try {
-    const project = await Project.findById(req.params.projectID);
+    await Project.findById(req.params.projectID);
   } catch (error) {
     return res.status(404).send("Project not found");
   }
