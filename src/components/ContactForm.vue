@@ -38,7 +38,7 @@
           v-model="message"
           type="textarea"
           color="white"
-          placeholder="Message..."
+          label="Message..."
           filled
         />
       </q-form>
