@@ -101,7 +101,7 @@ export default {
           });
       } else {
         quasar.notify({
-          message: "Please enter all of the fields!",
+          message: "Please enter all of the fields 🤦",
           color: "red-10",
           position: "top-right",
           progress: true,
