@@ -14,6 +14,7 @@
           icon="fab fa-github"
           flat
           round
+          :dense="$q.screen.lt.md"
         >
           <q-tooltip> GitHub </q-tooltip>
         </q-btn>
@@ -25,6 +26,7 @@
           icon="fab fa-instagram"
           flat
           round
+          :dense="$q.screen.lt.md"
         >
           <q-tooltip> Instagram </q-tooltip>
         </q-btn>
@@ -37,6 +39,7 @@
           icon="fab fa-linkedin"
           flat
           round
+          :dense="$q.screen.lt.md"
         >
           <q-tooltip> LinkedIn </q-tooltip>
         </q-btn>
@@ -49,6 +52,7 @@
           icon="fab fa-spotify"
           flat
           round
+          :dense="$q.screen.lt.md"
         >
           <q-tooltip> My Spotify Playlist </q-tooltip>
         </q-btn>
