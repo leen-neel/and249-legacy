@@ -56,4 +56,19 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.delete("/:projectID", async (req, res) => {
+  try {
+    const project = await Project.findById(req.params.projectID);
+  } catch (error) {
+    return res.status(404).send("Project not found");
+  }
+
+  try {
+    await Project.deleteOne({ _id: req.params.projectID });
+    res.send("Deleted successfully");
+  } catch (error) {
+    res.status(500).send("Something went wrong");
+  }
+});
+
 module.exports = router;
