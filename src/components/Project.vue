@@ -77,6 +77,7 @@
 
 <script>
 import { ref } from "vue";
+import axios from "axios";
 export default {
   props: {
     title: String,
@@ -91,6 +92,13 @@ export default {
   },
   setup() {
     const learn = ref(false);
+
+    axios({
+      url: "http://localhost:3000/",
+      method: "get",
+    }).then((res) => {
+      console.log(res.data);
+    });
 
     return {
       learn,
