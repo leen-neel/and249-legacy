@@ -4,6 +4,7 @@
       <div class="oswald allign-left text-bold text-h3">Projects</div>
     </q-card-section>
 
+    <!-- Projects -->
     <q-card-section v-if="!isLoading && !isError" class="row">
       <div
         v-for="project in projects"
@@ -44,9 +45,17 @@
       </div>
     </q-card-section>
 
+    <!-- In case there's an error -->
     <q-card-section v-if="!isLoading && isError">
-      <div class="text-h4 flex flex-center q-ma-lg text-bold">
+      <div class="text-h6 flex flex-center q-ma-lg text-bold">
         Something went wrong while getting the projects from API 😔
+      </div>
+    </q-card-section>
+
+    <!-- Loading -->
+    <q-card-section v-if="isLoading">
+      <div class="text-h4 flex flex-center q-ma-lg text-bold">
+        <q-spinner-dots color="white" size="5rem" :thickness="5" />
       </div>
     </q-card-section>
   </q-card>
