@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const Project = require("../models/Project");
 
+// Get all projects
 router.get("/", async (req, res) => {
   try {
     const projects = await Project.find();
@@ -10,6 +11,7 @@ router.get("/", async (req, res) => {
   }
 });
 
+// Add a project
 router.post("/", async (req, res) => {
   const body = req.body;
 
