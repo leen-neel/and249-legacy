@@ -27,6 +27,7 @@
           color="primary"
           icon-right="arrow_forward"
           label="Learn more"
+          class="q-mt-sm"
           @click="learn = true"
         />
       </div>
