@@ -33,7 +33,7 @@ const ProjectSchema = new mongoose.Schema({
   clientTitle: {
     type: String,
   },
-  descripton: {
+  description: {
     type: String,
   },
 });
