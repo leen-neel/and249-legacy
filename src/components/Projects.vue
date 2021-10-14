@@ -43,6 +43,12 @@
         </q-card>
       </div>
     </q-card-section>
+
+    <q-card-section v-if="!isLoading && isError">
+      <div class="text-h4 flex flex-center q-ma-lg text-bold">
+        Something went wrong while getting the projects from API 😔
+      </div>
+    </q-card-section>
   </q-card>
 </template>
 
