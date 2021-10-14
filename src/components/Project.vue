@@ -1,5 +1,5 @@
 <template>
-  <q-card class="my-card">
+  <q-card>
     <q-img
       :src="`images/projects/${img}`"
       :ratio="1 / 1"
