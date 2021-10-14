@@ -54,6 +54,12 @@
         <strong>Tech Stack:</strong> {{ stack }}
       </q-card-section>
 
+      <q-card-section v-if="!forClient">
+        <div class="text-h6 text-bold">
+          <div class="text-center">{{ description }}</div>
+        </div>
+      </q-card-section>
+
       <q-card-section v-if="forClient">
         <div class="text-h6 text-bold">
           <div class="text-center">"{{ testimonial }}"</div>
@@ -89,6 +95,7 @@ export default {
     clientImg: String,
     clientTitle: String,
     forClient: Boolean,
+    description: String,
   },
   setup() {
     const learn = ref(false);

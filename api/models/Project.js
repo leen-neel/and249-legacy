@@ -33,6 +33,9 @@ const ProjectSchema = new mongoose.Schema({
   clientTitle: {
     type: String,
   },
+  descripton: {
+    type: String,
+  },
 });
 
 module.exports = mongoose.model("Projects", ProjectSchema);

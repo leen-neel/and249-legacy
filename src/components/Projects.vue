@@ -20,6 +20,7 @@
           :clientImg="project.clientImg"
           :testimonial="project.testimonial"
           :forClient="project.forClient"
+          :description="project.description"
         />
       </div>
 
@@ -79,6 +80,16 @@ export default defineComponent({
         clientName: "Katie Jo Pockat",
         clientImg: "katie.jpg",
         clientTitle: "Singer/Songwriter",
+      },
+
+      {
+        title: "Katie Jo Pockat",
+        stack: "WordPress Along with Elementor",
+        url: "https://katiejopockat.com/",
+        img: "katiejo.jpg",
+        forClient: false,
+        description:
+          "I hired Neel to create my official artist website. He built the whole site and it was up and running in two weeks. He involved me in the process, asking which color schemes I preferred and asked me all I'd like included on my site. Then he taught me how to make my own additions in the way of blog posts and song lyrics. As the website grew, he made all the necessary changes and updates whenever needed in a timely matter and is always available when I need him.",
       },
     ]);
 
