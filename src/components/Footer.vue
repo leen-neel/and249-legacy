@@ -12,6 +12,7 @@
           target="_blank"
           color="white"
           icon="fab fa-github"
+          class="q-mx-sm"
           flat
           round
           :dense="$q.screen.lt.md"
@@ -24,6 +25,7 @@
           target="_blank"
           color="white"
           icon="fab fa-instagram"
+          class="q-mx-sm"
           flat
           round
           :dense="$q.screen.lt.md"
@@ -37,6 +39,7 @@
           target="_blank"
           color="white"
           icon="fab fa-linkedin"
+          class="q-mx-sm"
           flat
           round
           :dense="$q.screen.lt.md"
@@ -50,6 +53,7 @@
           target="_blank"
           color="white"
           icon="fab fa-spotify"
+          class="q-mx-sm"
           flat
           round
           :dense="$q.screen.lt.md"
