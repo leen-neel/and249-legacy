@@ -20,9 +20,8 @@
 
     <div class="flex flex-center q-ma-sm">
       <q-btn
-        class="text-bold q-px-xl q-py-xs"
+        class="cta text-bold q-px-xl q-py-xs"
         type="a"
-        color="primary"
         href="#contact"
         size="22px"
         label="Contact Me"
