@@ -8,7 +8,11 @@
         Hey there! I am
         <span class="archDau text-bold"> Anindo Neel Dutta! </span> I hail from
         🇮🇳. I am a project manager at Norian Games Pvt. Ltd. I make web apps
-        with the <strong>MEVN</strong> stack.
+        with the
+        <strong>
+          <abbr title="Mongoose + Express + Vue.JS + NodeJS">MEVN</abbr>
+        </strong>
+        stack.
       </p>
 
       <p>
