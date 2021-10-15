@@ -17,7 +17,9 @@
           round
           :dense="$q.screen.lt.md"
         >
-          <q-tooltip> {{ social.tooltip }} </q-tooltip>
+          <q-tooltip class="text-bold bg-primary">
+            {{ social.tooltip }}
+          </q-tooltip>
         </q-btn>
       </div>
     </q-card-section>
