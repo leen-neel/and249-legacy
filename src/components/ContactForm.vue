@@ -14,7 +14,22 @@
         Your message was sent! 🥳
       </div>
 
-      <q-form v-if="!messageSent">
+      <div
+        v-if="messageFailed"
+        class="text-h4 flex flex-center q-ma-lg text-bold text-center"
+      >
+        No worries! Send me an email at
+
+        <q-badge color="primary" type="a" class="q-ml-sm text-h6">
+          <a
+            :href="`mailto:and24903@gmail.com?subject=${subject}&body=${message}`"
+          >
+            {{ emailID }}
+          </a>
+        </q-badge>
+      </div>
+
+      <q-form v-if="!messageSent && !messageFailed">
         <q-input v-model="name" type="text" label="Name" filled color="white" />
         <q-input
           class="q-mt-sm"
@@ -44,7 +59,7 @@
       </q-form>
 
       <q-btn
-        v-if="!messageSent"
+        v-if="!messageSent && !messageFailed"
         class="q-mt-sm"
         color="primary"
         icon="send"
@@ -68,8 +83,10 @@ export default {
     const email = ref("");
     const message = ref("");
     const subject = ref("");
+    const emailID = ref("and24903@gmail.com");
 
     const messageSent = ref(false);
+    const messageFailed = ref(false);
 
     const sendMessage = () => {
       if (name.value && email.value && message.value && subject.value) {
@@ -90,6 +107,7 @@ export default {
             messageSent.value = true;
           })
           .catch(() => {
+            messageFailed.value = true;
             quasar.notify({
               message: "Something went wrong 😔",
               color: "red-10",
@@ -117,6 +135,8 @@ export default {
       subject,
       sendMessage,
       messageSent,
+      messageFailed,
+      emailID,
     };
   },
 };
