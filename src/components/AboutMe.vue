@@ -10,7 +10,7 @@
         🇮🇳. I am a project manager at Norian Games Pvt. Ltd. I make web apps
         with the
         <strong>
-          <abbr title="Mongoose + Express + Vue.JS + NodeJS">MEVN</abbr>
+          <abbr title="MongoDB + Express + Vue.JS + NodeJS">MEVN</abbr>
         </strong>
         stack.
       </p>
