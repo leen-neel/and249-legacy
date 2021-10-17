@@ -5,61 +5,62 @@
 
       <q-space />
 
-      <div v-for="social in socials" :key="social.id">
+      <div>
         <q-btn
           type="a"
-          :href="social.href"
+          href="https://github.com/leen-neel/"
           target="_blank"
           color="white"
-          :icon="social.icon"
+          icon="fab fa-github"
           class="q-mx-sm"
           flat
           round
           :dense="$q.screen.lt.md"
         >
-          <q-tooltip class="text-bold bg-primary">
-            {{ social.tooltip }}
-          </q-tooltip>
+          <q-tooltip class="text-bold bg-primary"> GitHub </q-tooltip>
+        </q-btn>
+        <q-btn
+          type="a"
+          href="https://instagram.com/and_249/"
+          target="_blank"
+          color="white"
+          icon="fab fa-instagram"
+          class="q-mx-sm"
+          flat
+          round
+          :dense="$q.screen.lt.md"
+        >
+          <q-tooltip class="text-bold bg-primary"> Instagram </q-tooltip>
+        </q-btn>
+        <q-btn
+          type="a"
+          href="https://www.linkedin.com/in/anindo-neel-dutta-2a8050199/"
+          target="_blank"
+          color="white"
+          icon="fab fa-linkedin"
+          class="q-mx-sm"
+          flat
+          round
+          :dense="$q.screen.lt.md"
+        >
+          <q-tooltip class="text-bold bg-primary"> LinkedIn </q-tooltip>
+        </q-btn>
+        <q-btn
+          type="a"
+          href="https://open.spotify.com/playlist/6hJBXl2LTwxuciQLlcse51/"
+          target="_blank"
+          color="white"
+          icon="fab fa-spotify"
+          class="q-mx-sm"
+          flat
+          round
+          :dense="$q.screen.lt.md"
+        >
+          <q-tooltip class="text-bold bg-primary"> My playlist </q-tooltip>
         </q-btn>
       </div>
     </q-card-section>
   </q-card>
 </template>
 
-<script>
-import { ref } from "vue";
-export default {
-  setup() {
-    const socials = ref([
-      {
-        href: "https://github.com/leen-neel/",
-        icon: "fab fa-github",
-        tooltip: "GitHub",
-        id: 0,
-      },
-      {
-        href: "https://instagram.com/and_249/",
-        icon: "fab fa-instagram",
-        tooltip: "Instagram",
-        id: 1,
-      },
-      {
-        href: "https://www.linkedin.com/in/anindo-neel-dutta-2a8050199/",
-        icon: "fab fa-linkedin",
-        tooltip: "LinkedIn",
-        id: 2,
-      },
-      {
-        href: "https://open.spotify.com/playlist/6hJBXl2LTwxuciQLlcse51/",
-        icon: "fab fa-spotify",
-        tooltip: "My Spotify Playlist",
-        id: 3,
-      },
-    ]);
-
-    return {
-      socials,
-    };
-  },
-};
-</script>
+<script></script>

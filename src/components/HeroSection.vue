@@ -26,6 +26,8 @@
   </q-card>
 </template>
 
+<script></script>
+
 <style lang="scss" scoped>
 .avatar-card {
   border-radius: 16px;
