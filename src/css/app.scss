@@ -79,6 +79,7 @@ body.body--dark {
 
 /** Light mode classes */
 body.body--light {
+  color: #0f3f35;
   background-color: #53e6cc;
 
   @supports (backdrop-filter: none) {
