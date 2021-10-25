@@ -8,7 +8,9 @@
 
     <Projects />
 
-    <ContactForm id="contact" />
+    <div id="contact"></div>
+
+    <ContactForm />
 
     <Footer />
   </q-page>
