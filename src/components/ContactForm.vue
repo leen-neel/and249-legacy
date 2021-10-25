@@ -20,7 +20,7 @@
       >
         No worries! Send me an email at
 
-        <q-badge color="primary" type="a" class="q-ml-sm text-h6">
+        <q-badge color="primary" class="q-ml-sm text-h6">
           <a
             target="_blank"
             :href="`mailto:and24903@gmail.com?subject=${subject}&body=${message}`"
