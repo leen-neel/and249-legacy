@@ -8,7 +8,7 @@
 
     <Projects />
 
-    <div id="contact"></div>
+    <div id="hire"></div>
 
     <HireMe />
 

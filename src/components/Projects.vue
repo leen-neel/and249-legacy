@@ -36,9 +36,9 @@
               class="text-bold q-px-xl q-py-xs"
               type="a"
               color="primary"
-              href="#contact"
+              href="#hire"
               size="22px"
-              label="Contact Me"
+              label="Hire Me"
             />
           </div>
         </q-card>
