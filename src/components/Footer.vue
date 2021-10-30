@@ -1,9 +1,17 @@
 <template>
   <q-card class="q-mt-lg">
-    <q-card-section class="flex flex-center justify-end">
-      <div class="text-weight-bolder">Made with 💙 by Anindo Neel Dutta</div>
+    <q-card-section
+      class="row flex-center"
+      :class="{ column: $q.screen.lt.md }"
+    >
+      <div
+        class="text-weight-bolder text-center"
+        :class="{ 'q-mb-sm': $q.screen.lt.md }"
+      >
+        Made with 💙 by Anindo Neel Dutta
+      </div>
 
-      <q-space />
+      <q-space v-if="!$q.screen.lt.md" />
 
       <div>
         <q-btn
