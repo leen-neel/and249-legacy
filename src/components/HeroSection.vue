@@ -15,7 +15,7 @@
       <div>
         <q-avatar size="250px" class="avatar-card">
           <q-img
-            src="images/avatar_neel.png"
+            src="images/Myself.jpeg"
             :ratio="1 / 1"
             spinner-color="primary"
             spinner-size="82px"
