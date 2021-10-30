@@ -1,15 +1,8 @@
 import axios from "axios";
 
-type Message = {
-  name: String;
-  sender: String;
-  subject: String;
-  body: String;
-};
-
 const API_URL = "https://and249-portfolio-api.herokuapp.com/api/";
 
-const sendMail = async (message: Message): Promise<void> => {
+const sendMail = async (message) => {
   try {
     await axios({
       method: "post",
