@@ -73,7 +73,7 @@
               />
             </q-avatar>
           </div>
-          <div class="flex flex-center">
+          <div class="flex flex-center text-center">
             {{ clientName }} - {{ clientTitle }}
           </div>
         </div>

@@ -9,7 +9,7 @@
     <q-card-section>
       <div
         v-if="messageSent"
-        class="text-h4 flex flex-center q-ma-lg text-bold"
+        class="text-h4 flex flex-center q-ma-lg text-bold text-center"
       >
         Your message was sent! 🥳
       </div>
