@@ -93,7 +93,7 @@ export default defineComponent({
     onMounted(async () => {
       try {
         const allPrj = await axios({
-          url: "http://localhost:3000/api/projects/",
+          url: "https://and249-portfolio-api.herokuapp.com/api/projects/",
           method: "get",
         });
 

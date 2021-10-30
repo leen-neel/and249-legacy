@@ -7,7 +7,7 @@ type Message = {
   body: String;
 };
 
-const API_URL = "http://localhost:3000/api/";
+const API_URL = "https://and249-portfolio-api.herokuapp.com/api/";
 
 const sendMail = async (message: Message): Promise<void> => {
   try {
