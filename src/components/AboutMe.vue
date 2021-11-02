@@ -16,9 +16,9 @@
       </p>
 
       <p>
-        I've been coding since the age of 6. Programming has been an
-        indistinguishable part of my life. Learning about new technology and
-        building stuff has always been a passion of mine.
+        I've been coding since the age of 6. Programming has been an essential
+        part of my life. Learning about new technology and building apps that
+        find solutions to make life easier has always been a passion of mine.
       </p>
     </q-card-section>
 

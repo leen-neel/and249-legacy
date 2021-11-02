@@ -4,7 +4,8 @@
       <div class="oswald allign-left text-bold text-h3">Hire me</div>
     </q-card-section>
     <q-card-section class="about-text">
-      Wanna hire me or just talk to me? Shoot me a message!
+      If you would like to get in contact with me for business or casual
+      inquiries, send me a message!
     </q-card-section>
     <q-card-section>
       <div
