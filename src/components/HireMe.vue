@@ -32,7 +32,15 @@
       </div>
 
       <q-form v-if="!messageSent && !messageFailed">
-        <q-input v-model="name" type="text" label="Name" filled color="white" />
+        <q-input
+          v-model="name"
+          type="text"
+          label="Name"
+          filled
+          color="white"
+          :loading="messageSending"
+          :readonly="messageSending"
+        />
         <q-input
           class="q-mt-sm"
           v-model="email"
@@ -40,6 +48,8 @@
           label="Email"
           filled
           color="white"
+          :loading="messageSending"
+          :readonly="messageSending"
         />
 
         <q-input
@@ -48,6 +58,8 @@
           color="white"
           label="Subject"
           filled
+          :loading="messageSending"
+          :readonly="messageSending"
         />
 
         <q-input
@@ -57,6 +69,8 @@
           color="white"
           label="Message..."
           filled
+          :loading="messageSending"
+          :readonly="messageSending"
         />
       </q-form>
 
@@ -67,13 +81,14 @@
         icon="send"
         label="Send"
         @click="sendMessage"
+        :disable="!canSend"
       />
     </q-card-section>
   </q-card>
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useQuasar } from "quasar";
 import { sendMail } from "boot/sendMail";
 
@@ -89,9 +104,25 @@ export default {
 
     const messageSent = ref(false);
     const messageFailed = ref(false);
+    const messageSending = ref(false);
+
+    const regex =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    const canSend = computed(() => {
+      return (
+        name.value &&
+        email.value &&
+        regex.test(email.value) &&
+        subject.value &&
+        message.value &&
+        !messageSending.value
+      );
+    });
 
     const sendMessage = () => {
       if (name.value && email.value && message.value && subject.value) {
+        messageSending.value = true;
         sendMail({
           name: name.value,
           sender: email.value,
@@ -99,6 +130,7 @@ export default {
           body: message.value,
         })
           .then(() => {
+            messageSending.value = false;
             quasar.notify({
               message: "Your message was sent!",
               color: "primary",
@@ -139,6 +171,8 @@ export default {
       messageSent,
       messageFailed,
       emailID,
+      canSend,
+      messageSending,
     };
   },
 };

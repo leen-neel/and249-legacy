@@ -1,19 +1,14 @@
 <template>
   <q-card class="q-mt-lg">
     <q-tabs :dense="$q.screen.lt.md" v-model="tab" align="justify">
-      <q-tab icon="school" name="edu" label="Education" />
       <q-tab icon="developer_mode" name="skills" label="Skills" />
+      <q-tab icon="school" name="edu" label="Education" />
       <q-tab icon="auto_awesome" name="hobbies" label="Hobbies" />
     </q-tabs>
 
     <q-separator />
 
     <q-tab-panels v-model="tab" animated>
-      <q-tab-panel name="edu">
-        <div class="text-h4 oswald text-bold">Education</div>
-        <p class="about-text q-mt-md">I am currently a high school student.</p>
-      </q-tab-panel>
-
       <q-tab-panel name="skills">
         <div class="text-h4 oswald text-bold">Skills</div>
         <p class="about-text q-mt-md">
@@ -29,6 +24,11 @@
         <p class="about-text q-mt-md">
           <strong>Database:</strong> Firebase, MongoDB
         </p>
+      </q-tab-panel>
+
+      <q-tab-panel name="edu">
+        <div class="text-h4 oswald text-bold">Education</div>
+        <p class="about-text q-mt-md">I am currently a high school student.</p>
       </q-tab-panel>
 
       <q-tab-panel name="hobbies">
@@ -50,7 +50,7 @@
 import { ref } from "vue";
 export default {
   setup() {
-    const tab = ref("edu");
+    const tab = ref("skills");
 
     return {
       tab,
