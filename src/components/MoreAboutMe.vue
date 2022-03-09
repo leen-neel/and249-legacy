@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-mt-lg">
+  <q-card class="q-mt-lg q-mx-sm">
     <q-tabs :dense="$q.screen.lt.md" v-model="tab" align="justify">
       <q-tab icon="developer_mode" name="skills" label="Skills" />
       <q-tab icon="school" name="edu" label="Education" />
