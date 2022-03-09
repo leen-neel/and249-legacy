@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-mt-lg">
+  <div class="bg-dark q-mt-lg">
     <q-card-section
       class="row flex-center"
       :class="{ column: $q.screen.lt.md }"
@@ -55,6 +55,19 @@
         </q-btn>
         <q-btn
           type="a"
+          href="https://t.me/and_249"
+          target="_blank"
+          color="white"
+          icon="fab fa-telegram"
+          class="q-mx-sm"
+          flat
+          round
+          :dense="$q.screen.lt.md"
+        >
+          <q-tooltip class="text-bold bg-primary"> Telegram </q-tooltip>
+        </q-btn>
+        <q-btn
+          type="a"
           href="https://open.spotify.com/playlist/6hJBXl2LTwxuciQLlcse51/"
           target="_blank"
           color="white"
@@ -68,7 +81,7 @@
         </q-btn>
       </div>
     </q-card-section>
-  </q-card>
+  </div>
 </template>
 
 <script></script>
