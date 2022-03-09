@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-mt-lg">
+  <div class="q-mt-lg">
     <q-card-section>
       <div class="oswald allign-left text-bold text-h3">Hire me</div>
     </q-card-section>
@@ -84,7 +84,7 @@
         :disable="!canSend"
       />
     </q-card-section>
-  </q-card>
+  </div>
 </template>
 
 <script>
