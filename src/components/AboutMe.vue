@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-mt-lg q-pa-sm">
+  <div class="q-mt-lg q-pa-sm">
     <q-card-section>
       <div class="allign-left oswald text-bold text-h3">About me</div>
     </q-card-section>
@@ -20,9 +20,7 @@
         part of my life. Learning about new technology and building apps that
         find solutions to make life easier has always been a passion of mine.
       </p>
-    </q-card-section>
 
-    <div class="flex flex-center q-ma-sm">
       <q-btn
         class="text-bold q-px-xl q-py-xs"
         type="a"
@@ -31,6 +29,6 @@
         size="22px"
         label="Hire Me"
       />
-    </div>
-  </q-card>
+    </q-card-section>
+  </div>
 </template>
