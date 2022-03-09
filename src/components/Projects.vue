@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-mt-lg">
+  <div class="q-mt-lg">
     <q-card-section>
       <div class="oswald allign-left text-bold text-h3">Projects</div>
     </q-card-section>
@@ -58,7 +58,7 @@
         <q-spinner-dots color="white" size="5rem" :thickness="5" />
       </div>
     </q-card-section>
-  </q-card>
+  </div>
 </template>
 
 <script>

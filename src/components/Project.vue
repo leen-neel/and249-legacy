@@ -37,6 +37,18 @@
   <!-- Dialog containing more info -->
   <q-dialog v-model="learn">
     <q-card>
+      <q-bar dark class="bg-primary text-white">
+        <q-space />
+        <q-btn
+          color="white"
+          class="float-right"
+          flat
+          round
+          dense
+          icon="close"
+          v-close-popup
+        />
+      </q-bar>
       <q-card-section>
         <q-img
           :src="`images/projects/${img}`"
