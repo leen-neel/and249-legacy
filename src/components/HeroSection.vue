@@ -112,6 +112,14 @@ body.body--light {
 }
 
 @media (max-width: $breakpoint-xs-max) {
+  .hero {
+    height: 100vh;
+
+    background-image: url("/images/me2.jpeg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
   .info {
     top: 40%;
     left: 5%;
