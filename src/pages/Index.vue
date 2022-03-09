@@ -18,6 +18,7 @@
 
 <script>
 import { defineComponent } from "vue";
+import { useMeta } from "quasar";
 
 import HeroSection from "components/HeroSection.vue";
 import AboutMe from "components/AboutMe";
@@ -36,6 +37,61 @@ export default defineComponent({
     MoreAboutMe,
     HireMe,
     Footer,
+  },
+
+  setup() {
+    // Meta info
+    useMeta(() => {
+      return {
+        title: "Anindo Neel Dutta | Full-Stack Web Developer",
+        meta: {
+          description: {
+            name: "description",
+            content:
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+          },
+          title: {
+            name: "title",
+            content: "Anindo Neel Dutta | Full-Stack Web Developer",
+          },
+          themeColor: { name: "theme-color", content: "#53e6cc" },
+          ogDescripton: {
+            name: "og:description",
+            content:
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+          },
+          ogTitle: {
+            name: "og:title",
+            content: "Anindo Neel Dutta | Full-Stack Web Developer",
+          },
+          ogImage: {
+            name: "og:image",
+            content: "https://and249.codes/images/Myself.jpeg",
+          },
+          ogURL: {
+            name: "og:url",
+            content: "https://and249.codes/",
+          },
+          twitterDesc: {
+            name: "twitter:description",
+            content:
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+          },
+          twitterTitle: {
+            name: "twitter:title",
+            content: "Anindo Neel Dutta | Full-Stack Web Developer",
+          },
+          twitterImage: {
+            name: "twitter:image",
+            content: "https://and249.codes/images/Myself.jpeg",
+          },
+          twitterURL: {
+            name: "twitter:url",
+            content: "https://and249.codes/",
+          },
+        },
+      };
+    });
   },
 });
 </script>
