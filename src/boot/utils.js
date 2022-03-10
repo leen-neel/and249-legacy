@@ -4,4 +4,11 @@ const scrollToHire = () => {
   });
 };
 
-export { scrollToHire };
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+export { scrollToHire, scrollToTop };
