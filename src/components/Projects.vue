@@ -34,11 +34,10 @@
           <div class="flex flex-center q-py-md">
             <q-btn
               class="text-bold q-px-xl q-py-xs"
-              type="a"
               color="primary"
-              href="#hire"
               size="22px"
               label="Hire Me"
+              @click="scrollToHire"
             />
           </div>
         </q-card>
@@ -64,6 +63,7 @@
 <script>
 import axios from "axios";
 import { defineComponent, ref, onMounted } from "vue";
+import { scrollToHire } from "boot/utils";
 
 import Project from "./Project.vue";
 
@@ -110,6 +110,7 @@ export default defineComponent({
       projects,
       isLoading,
       isError,
+      scrollToHire,
     };
   },
 });

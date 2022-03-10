@@ -23,12 +23,22 @@
 
       <q-btn
         class="text-bold q-px-xl q-py-xs"
-        type="a"
-        color="primary"
-        href="#hire"
+        @click="scrollToHire"
         size="22px"
         label="Hire Me"
+        color="primary"
       />
     </q-card-section>
   </div>
 </template>
+
+<script>
+import { scrollToHire } from "boot/utils";
+export default {
+  setup() {
+    return {
+      scrollToHire,
+    };
+  },
+};
+</script>
