@@ -8,7 +8,10 @@
   background: #0b917f;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0d8676;
+  background: #0c8172;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #53e6cc;
 }
 
 .cta {
