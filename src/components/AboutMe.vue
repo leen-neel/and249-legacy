@@ -9,8 +9,11 @@
         <span class="archDau text-bold"> Anindo Neel Dutta! </span> I hail from
         🇮🇳. I am a project manager at Norian Games Pvt. Ltd. I make web apps
         with the
-        <strong>
-          <abbr title="MongoDB + Express + Vue.JS + NodeJS">MEVN</abbr>
+        <strong class="cursor-pointer">
+          MEVN
+          <q-tooltip>
+            <strong>MongoDB + Express + Vue JS + Node JS</strong>
+          </q-tooltip>
         </strong>
         stack.
       </p>
