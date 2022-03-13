@@ -46,24 +46,11 @@
 
 <script>
 import { defineComponent } from "vue";
-import { useQuasar, useMeta } from "quasar";
+import { useMeta } from "quasar";
+import { copyDiscord } from "boot/utils";
 
 export default defineComponent({
   setup() {
-    const $q = useQuasar();
-
-    const copyDiscord = () => {
-      navigator.clipboard.writeText("and249#0249");
-
-      $q.notify({
-        message: "Username copied to clipboard!",
-        color: "primary",
-        timeout: 2000,
-        progress: true,
-        position: "top-right",
-      });
-    };
-
     // Meta info
     useMeta(() => {
       return {
