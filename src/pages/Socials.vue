@@ -44,7 +44,7 @@
 
 <script>
 import { defineComponent } from "vue";
-import { useQuasar } from "quasar";
+import { useQuasar, useMeta } from "quasar";
 
 export default defineComponent({
   setup() {
@@ -60,6 +60,59 @@ export default defineComponent({
         progress: true,
       });
     };
+
+    // Meta info
+    useMeta(() => {
+      return {
+        title: "Socials | Anindo Neel Dutta",
+        meta: {
+          description: {
+            name: "description",
+            content:
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+          },
+          title: {
+            name: "title",
+            content: "Socials | Anindo Neel Dutta",
+          },
+          themeColor: { name: "theme-color", content: "#53e6cc" },
+          ogDescripton: {
+            name: "og:description",
+            content:
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+          },
+          ogTitle: {
+            name: "og:title",
+            content: "Socials | Anindo Neel Dutta",
+          },
+          ogImage: {
+            name: "og:image",
+            content: "https://and249.codes/images/Myself.jpeg",
+          },
+          ogURL: {
+            name: "og:url",
+            content: "https://and249.codes/",
+          },
+          twitterDesc: {
+            name: "twitter:description",
+            content:
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+          },
+          twitterTitle: {
+            name: "twitter:title",
+            content: "Socials | Anindo Neel Dutta",
+          },
+          twitterImage: {
+            name: "twitter:image",
+            content: "https://and249.codes/images/Myself.jpeg",
+          },
+          twitterURL: {
+            name: "twitter:url",
+            content: "https://and249.codes/",
+          },
+        },
+      };
+    });
 
     return {
       copyDiscord,
