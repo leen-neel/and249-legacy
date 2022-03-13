@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-page-container>
-      <q-page class="flex column flex-center" padding>
+      <q-page class="background flex column flex-center" padding>
         <img src="/images/AppIcon.png" alt="" />
 
         <div class="column q-gutter-md socials">
@@ -71,6 +71,13 @@ export default defineComponent({
 <style lang="scss" scoped>
 img {
   width: 100px;
+}
+
+.background {
+  background-image: url("/images/socialsBG.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .socials {
