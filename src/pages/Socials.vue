@@ -6,28 +6,13 @@
 
         <div class="column q-gutter-md socials">
           <q-btn
-            type="a"
-            href="https://github.com/leen-neel/"
-            target="_blank"
-            label="GitHub"
-            color="primary"
-            icon="fab fa-github"
-          />
-          <q-btn
             target="_blank"
             label="Discord"
             color="primary"
             icon="fab fa-discord"
             @click="copyDiscord"
           />
-          <q-btn
-            type="a"
-            href="https://www.instagram.com/and_249/"
-            target="_blank"
-            label="Instagram"
-            color="primary"
-            icon="fab fa-instagram"
-          />
+
           <q-btn
             type="a"
             href="https://t.me/and_249/"
@@ -35,6 +20,23 @@
             label="Telegram"
             color="primary"
             icon="fab fa-telegram"
+          />
+          <q-btn
+            type="a"
+            href="https://github.com/leen-neel/"
+            target="_blank"
+            label="GitHub"
+            color="primary"
+            icon="fab fa-github"
+          />
+
+          <q-btn
+            type="a"
+            href="https://www.instagram.com/and_249/"
+            target="_blank"
+            label="Instagram"
+            color="primary"
+            icon="fab fa-instagram"
           />
         </div>
       </q-page>
