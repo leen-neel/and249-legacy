@@ -60,6 +60,7 @@ export default defineComponent({
         color: "primary",
         timeout: 2000,
         progress: true,
+        position: "top-right",
       });
     };
 
