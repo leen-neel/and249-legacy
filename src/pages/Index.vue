@@ -18,12 +18,12 @@
 import { defineComponent } from "vue";
 import { useMeta } from "quasar";
 
-import HeroSection from "components/HeroSection.vue";
-import AboutMe from "components/AboutMe";
-import Projects from "components/Projects.vue";
-import MoreAboutMe from "components/MoreAboutMe";
-import HireMe from "components/HireMe";
-import Footer from "components/Footer";
+import HeroSection from "components/Sections/HeroSection.vue";
+import AboutMe from "components/Sections/AboutMe";
+import Projects from "components/Sections/Projects.vue";
+import MoreAboutMe from "components/Sections/MoreAboutMe";
+import HireMe from "components/Sections/HireMe";
+import Footer from "components/Sections/Footer";
 
 export default defineComponent({
   name: "PageIndex",
