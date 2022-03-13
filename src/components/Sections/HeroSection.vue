@@ -20,14 +20,12 @@
           </q-btn>
           <q-btn
             color="primary"
-            icon="fab fa-instagram"
-            round
-            type="a"
-            target="_blank"
-            href="https://www.instagram.com/and_249/"
+            icon="fab fa-discord"
             size="18px"
+            @click="copyDiscord"
+            round
           >
-            <q-tooltip> Instagram </q-tooltip>
+            <q-tooltip> Discord </q-tooltip>
           </q-btn>
           <q-btn
             color="primary"
@@ -40,6 +38,18 @@
           >
             <q-tooltip> Telegram </q-tooltip>
           </q-btn>
+          <q-btn
+            color="primary"
+            icon="fab fa-instagram"
+            round
+            type="a"
+            target="_blank"
+            href="https://www.instagram.com/and_249/"
+            size="18px"
+          >
+            <q-tooltip> Instagram </q-tooltip>
+          </q-btn>
+
           <q-btn
             color="primary"
             icon="fab fa-linkedin"
@@ -147,3 +157,16 @@ body.body--light {
   }
 }
 </style>
+
+<script>
+import { defineComponent } from "vue";
+import { copyDiscord } from "boot/utils";
+
+export default defineComponent({
+  setup() {
+    return {
+      copyDiscord,
+    };
+  },
+});
+</script>
