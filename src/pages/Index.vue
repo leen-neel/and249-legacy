@@ -2,15 +2,13 @@
   <q-page>
     <HeroSection />
 
-    <AboutMe />
-
-    <MoreAboutMe />
-
-    <Projects />
-
-    <div id="hire"></div>
-
-    <HireMe />
+    <div :class="{ content: !$q.screen.lt.md }">
+      <AboutMe />
+      <MoreAboutMe />
+      <Projects />
+      <div id="hire"></div>
+      <HireMe />
+    </div>
 
     <Footer />
   </q-page>
@@ -95,3 +93,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.content {
+  padding: 0 10vw;
+}
+</style>
