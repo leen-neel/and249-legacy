@@ -1,5 +1,5 @@
 <template>
-  <div class="q-mt-lg q-pa-sm">
+  <div>
     <q-card-section>
       <div class="allign-left oswald text-bold text-h3">About me</div>
     </q-card-section>
