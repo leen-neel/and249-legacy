@@ -39,6 +39,12 @@
             icon="fab fa-instagram"
           />
         </div>
+
+        <q-page-sticky position="bottom-right" :offset="[40, 30]">
+          <q-btn fab icon="public" color="primary" type="a" to="/">
+            <q-tooltip> Go to homepage </q-tooltip>
+          </q-btn>
+        </q-page-sticky>
       </q-page>
     </q-page-container>
   </q-layout>
