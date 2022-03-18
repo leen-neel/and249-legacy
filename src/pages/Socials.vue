@@ -71,6 +71,11 @@ export default defineComponent({
             name: "title",
             content: "Socials | Anindo Neel Dutta",
           },
+          keywords: {
+            name: "keywords",
+            content:
+              "anindo neel dutta, and249, and_249, web devs in kolkata, fullstack web dev services, neel, web design services, web dev, freelancers for making my website, anindo neel dutta social media links",
+          },
           themeColor: { name: "theme-color", content: "#53e6cc" },
           ogDescripton: {
             name: "og:description",

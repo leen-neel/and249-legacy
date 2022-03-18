@@ -48,6 +48,11 @@ export default defineComponent({
             content:
               "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
           },
+          keywords: {
+            name: "keywords",
+            content:
+              "anindo neel dutta, and249, and_249, web devs in kolkata, fullstack web dev services, neel, web design services, web dev, freelancers for making my website",
+          },
           title: {
             name: "title",
             content: "Anindo Neel Dutta | Full-Stack Web Developer",
