@@ -19,7 +19,7 @@
         v-if="messageFailed"
         class="text-h4 flex flex-center q-ma-lg text-bold text-center"
       >
-        No worries! Send me an email at
+        The message didn't go through, you can end me an email at
 
         <q-badge color="primary" class="q-ml-sm text-h6">
           <a
@@ -147,7 +147,7 @@ export default {
               color: "red-10",
               position: "top-right",
               progress: true,
-              timeout: 1500,
+              timeout: 2500,
             });
             return;
           });

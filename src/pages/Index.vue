@@ -2,13 +2,13 @@
   <q-page>
     <HeroSection />
 
-    <div :class="{ content: !$q.screen.lt.md }">
+    <main :class="{ content: !$q.screen.lt.md }">
       <AboutMe />
       <MoreAboutMe />
       <Projects />
       <div id="hire"></div>
       <HireMe />
-    </div>
+    </main>
 
     <Footer />
   </q-page>

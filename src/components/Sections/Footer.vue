@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark q-mt-lg">
+  <footer class="bg-dark q-mt-lg">
     <q-card-section
       class="row flex-center"
       :class="{ column: $q.screen.lt.md }"
@@ -81,7 +81,7 @@
         </q-btn>
       </div>
     </q-card-section>
-  </div>
+  </footer>
 </template>
 
 <script></script>
