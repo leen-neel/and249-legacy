@@ -14,7 +14,7 @@ const scrollToTop = () => {
 };
 
 const copyDiscord = () => {
-  navigator.clipboard.writeText("and249#0249");
+  navigator.clipboard.writeText("and249#4195");
 
   Notify.create({
     message: "Discord tag copied to clipboard!",
