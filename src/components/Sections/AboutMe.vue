@@ -7,8 +7,7 @@
       <p>
         Hey there! I am
         <span class="archDau text-bold"> Anindo Neel Dutta! </span> I hail from
-        🇮🇳. I am a project manager at Norian Games Pvt. Ltd. I make web apps
-        with the
+        🇮🇳. I am a full-stack web developer who builds projects on the
         <strong class="cursor-pointer">
           MEVN
           <q-tooltip>

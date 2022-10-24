@@ -46,7 +46,7 @@ export default defineComponent({
           description: {
             name: "description",
             content:
-              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I'm a full-stack web developer who makes web apps with the MEVN stack",
           },
           keywords: {
             name: "keywords",
@@ -61,7 +61,7 @@ export default defineComponent({
           ogDescripton: {
             name: "og:description",
             content:
-              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I'm a full-stack web developer who makes web apps with the MEVN stack",
           },
           ogTitle: {
             name: "og:title",
@@ -78,7 +78,7 @@ export default defineComponent({
           twitterDesc: {
             name: "twitter:description",
             content:
-              "Hey there! I am Anindo Neel Dutta! I hail from India. I am a project manager at Norian Games Pvt. Ltd. I make web apps with the MEVN stack",
+              "Hey there! I am Anindo Neel Dutta! I hail from India. I'm a full-stack web developer who makes web apps with the MEVN stack",
           },
           twitterTitle: {
             name: "twitter:title",
