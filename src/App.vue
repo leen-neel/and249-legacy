@@ -9,7 +9,6 @@ export default defineComponent({
 
   setup() {
     const quasar = useQuasar();
-
     quasar.dark.set(true);
   },
 });
