@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://scary-goat-glasses.cyclic.app/api/projects";
+const API_URL = "https://and249-api.cyclic.app/api/";
 
 const sendMail = async (message) => {
   try {

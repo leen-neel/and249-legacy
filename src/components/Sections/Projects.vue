@@ -93,7 +93,7 @@ export default defineComponent({
     onMounted(async () => {
       try {
         const allPrj = await axios({
-          url: "https://scary-goat-glasses.cyclic.app/api/projects",
+          url: "https://and249-api.cyclic.app/api/projects",
           method: "get",
         });
 
