@@ -5,12 +5,12 @@
     <main :class="{ content: !$q.screen.lt.md }">
       <AboutMe />
       <MoreAboutMe />
-      <Projects />
+      <my-projects />
       <div id="hire"></div>
       <HireMe />
     </main>
 
-    <Footer />
+    <SiteFooter />
   </q-page>
 </template>
 
@@ -19,11 +19,11 @@ import { defineComponent } from "vue";
 import { useMeta } from "quasar";
 
 import HeroSection from "components/Sections/HeroSection.vue";
-import AboutMe from "components/Sections/AboutMe";
-import Projects from "components/Sections/Projects.vue";
-import MoreAboutMe from "components/Sections/MoreAboutMe";
-import HireMe from "components/Sections/HireMe";
-import Footer from "components/Sections/Footer";
+import AboutMe from "components/Sections/AboutMe.vue";
+import MyProjects from "components/Sections/MyProjects.vue";
+import MoreAboutMe from "components/Sections/MoreAboutMe.vue";
+import HireMe from "components/Sections/HireMe.vue";
+import SiteFooter from "components/Sections/SiteFooter.vue";
 
 export default defineComponent({
   name: "PageIndex",
@@ -31,10 +31,10 @@ export default defineComponent({
   components: {
     HeroSection,
     AboutMe,
-    Projects,
+    MyProjects,
     MoreAboutMe,
     HireMe,
-    Footer,
+    SiteFooter,
   },
 
   setup() {

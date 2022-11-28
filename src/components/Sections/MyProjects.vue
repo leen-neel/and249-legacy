@@ -65,7 +65,7 @@ import axios from "axios";
 import { defineComponent, ref, onMounted } from "vue";
 import { scrollToHire } from "boot/utils";
 
-import Project from "components/Project.vue";
+import Project from "components/SingleProject.vue";
 
 export default defineComponent({
   components: {
