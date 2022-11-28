@@ -7,14 +7,14 @@ const routes = [
 
   {
     path: "/socials",
-    component: () => import("pages/Socials.vue"),
+    component: () => import("pages/SocialsPage.vue"),
   },
 
   // Always leave this as last one,
   // but you can also remove it
   {
     path: "/:catchAll(.*)*",
-    component: () => import("pages/Error404.vue"),
+    component: () => import("pages/Error404Page.vue"),
   },
 ];
 
