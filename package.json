@@ -1,8 +1,8 @@
 {
-  "name": "youtube-bookmarker",
-  "version": "0.0.1",
-  "description": "A simple tool that can be used to bookmark your YouTube tutorials",
-  "productName": "YouTube Bookmarker",
+  "name": "and249",
+  "version": "1.5",
+  "description": "My portfolio website :)",
+  "productName": "and249",
   "author": "leen-neel <and24903@gmail.com>",
   "private": true,
   "scripts": {
