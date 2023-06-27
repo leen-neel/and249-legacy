@@ -1,5 +1,5 @@
-#!/bin/bash  
-  
+#!/bin/bash
+
 echo "Enter the commit message: "
 read commit_message
 
