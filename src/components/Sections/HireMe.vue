@@ -24,7 +24,7 @@
         <q-badge color="primary" class="q-ml-sm text-h6">
           <a
             target="_blank"
-            :href="`mailto:and24903@gmail.com?subject=${subject}&body=${message}`"
+            :href="`mailto:hello@and249.codes?subject=${subject}&body=${message}`"
           >
             {{ emailID }}
           </a>

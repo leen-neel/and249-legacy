@@ -95,7 +95,7 @@
 </template>
 
 <script>
-import { ref, defineProps } from "vue";
+import { ref } from "vue";
 
 export default {
   props: {
